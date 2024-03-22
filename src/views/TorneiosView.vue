@@ -13,12 +13,15 @@ fetch('./src/assets/dados.json')
 <template>
   <h1>Torneios</h1>
   {{ mensagem }}
-  <div
-      class='card'
-      v-for='(torneio, indice) in torneios'
-      :key='`torneio${indice}`'>
-    {{ torneio.nome }}
-  </div>
+  <RouterLink :to='`/torneio/${torneio.codigo}`'
+              v-for='(torneio, indice) in torneios'
+              :key='`torneio${indice}`'>
+    <div
+        class='card'
+    >
+      {{ torneio.nome }}
+    </div>
+  </RouterLink>
 </template>
 
 <style scoped>
@@ -29,6 +32,7 @@ fetch('./src/assets/dados.json')
   margin: 10px;
   padding: 10px
 }
+
 .card:hover {
   background-color: #bde0fe;
 }
