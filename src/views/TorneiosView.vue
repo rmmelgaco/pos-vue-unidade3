@@ -1,6 +1,9 @@
 <script setup>
 import {ref} from 'vue';
+import {useRoute} from 'vue-router';
 
+const route = useRoute()
+const {msg} = route.query
 const torneios = ref([])
 const mensagem = ref(null)
 
@@ -12,6 +15,8 @@ fetch('./src/assets/dados.json')
 
 <template>
   <h1>Torneios</h1>
+  <div v-if='msg'><span class="alert alert-danger" role="alert">{{ msg }}</span><br/><br/></div>
+
   {{ mensagem }}
   <RouterLink :to='`/torneio/${torneio.codigo}`'
               v-for='(torneio, indice) in torneios'
@@ -30,7 +35,9 @@ fetch('./src/assets/dados.json')
   flex-direction: column;
   cursor: pointer;
   margin: 10px;
-  padding: 10px
+  padding: 10px;
+  min-width: 170px;
+  box-shadow: 1px 1px 5px lightgray;
 }
 
 .card:hover {
