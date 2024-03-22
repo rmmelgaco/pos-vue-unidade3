@@ -17,6 +17,7 @@ fetch('../src/assets/dados.json')
   {{ mensagem }}
   <div v-if='torneio'>
     <h2>{{ torneio.nome }}</h2>
+
   </div>
   </template>
 

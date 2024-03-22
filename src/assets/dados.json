@@ -8,5 +8,57 @@
       "codigo": 2,
       "nome": "Copa do Brasil 2023"
     }
+  ],
+  "times": [
+    {
+      "codigo": 1,
+      "nome": "Atlético-MG"
+    },
+    {
+      "codigo": 2,
+      "nome": "Flamengo"
+    },
+    {
+      "codigo": 3,
+      "nome": "Palmeiras"
+    },
+    {
+      "codigo": 4,
+      "nome": "Fluminense"
+    },
+    {
+      "codigo": 5,
+      "nome": "Bahia"
+    },
+    {
+      "codigo": 6,
+      "nome": "Vasco"
+    }
+  ],
+  "jogos": [
+    {
+      "codigoTimeMandante": 1,
+      "codigoTimeVisitante": 2,
+      "resultado": {
+        "golsMandante": 3,
+        "golsVisitante": 0
+      }
+    },
+    {
+      "codigoTimeMandante": 3,
+      "codigoTimeVisitante": 4,
+      "resultado": {
+        "golsMandante": 1,
+        "golsVisitante": 0
+      }
+    },
+    {
+      "codigoTimeMandante": 5,
+      "codigoTimeVisitante": 6,
+      "resultado": {
+        "golsMandante": 1,
+        "golsVisitante": 2
+      }
+    }
   ]
 }
