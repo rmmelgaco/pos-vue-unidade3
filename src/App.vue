@@ -1,6 +1,6 @@
 <script setup>
 const menus = [
-  {rota: '/', label: 'Início'},
+  {rota: '/inicio', label: 'Início'},
   {rota: '/campeonatos', label: 'Campeonatos'}
 ]
 </script>

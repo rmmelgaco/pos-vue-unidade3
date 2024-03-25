@@ -1,9 +1,10 @@
 import {createRouter, createWebHashHistory} from 'vue-router';
-import InicioView from '@/views/InicioView.vue';
+import LoginView from '@/views/LoginView.vue';
 
 const routes = [
     {path: '/:pathMatch(.*)*', component: () => import('../views/PaginaNaoEncontradaView.vue')},
-    {path: '/', component: InicioView},
+    {path: '/', name: 'login', component: LoginView},
+    {path: '/inicio', component: () => import ('../views/InicioView.vue')},
     {path: '/campeonatos', component: () => import('../views/CampeonatosView.vue')},
     {
         path: '/campeonato/:codigoCampeonato(\\d+)',
@@ -28,6 +29,15 @@ const routes = [
 const router = createRouter({
     history: createWebHashHistory(),
     routes
+})
+
+router.beforeEach(async (to, from) => {
+    const usuario = sessionStorage.getItem('usuario')
+    if (!usuario && to.name !== 'login') {
+        return {
+            name: 'login'
+        }
+    }
 })
 
 export default router

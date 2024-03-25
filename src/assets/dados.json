@@ -120,5 +120,11 @@
         "golsVisitante": 2
       }
     }
+  ],
+  "usuarios": [
+    {
+      "email": "rodrigo@email.com",
+      "senha": "senha123"
+    }
   ]
 }
