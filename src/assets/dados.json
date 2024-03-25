@@ -1,12 +1,12 @@
 {
-  "torneios": [
+  "campeonatos": [
     {
       "codigo": 1,
       "nome": "Campeonato Brasileiro 2023"
     },
     {
       "codigo": 2,
-      "nome": "Copa do Brasil 2023"
+      "nome": "Campeonato Brasileiro 2022"
     }
   ],
   "times": [

@@ -4,27 +4,27 @@ import {useRoute} from 'vue-router';
 
 const route = useRoute()
 const {msg} = route.query
-const torneios = ref([])
+const campeonatos = ref([])
 const mensagem = ref(null)
 
 fetch('./src/assets/dados.json')
     .then(dados => dados.json())
-    .then(dados => torneios.value = dados.torneios)
+    .then(dados => campeonatos.value = dados.campeonatos)
     .catch(error => mensagem.value = error)
 </script>
 
 <template>
-  <h1>Torneios</h1>
+  <h1>Campeonatos</h1>
   <div v-if='msg'><span class="alert alert-danger" role="alert">{{ msg }}</span><br/><br/></div>
 
   {{ mensagem }}
-  <RouterLink :to='`/torneio/${torneio.codigo}`'
-              v-for='(torneio, indice) in torneios'
-              :key='`torneio${indice}`'>
+  <RouterLink :to='`/campeonato/${campeonato.codigo}`'
+              v-for='(campeonato, indice) in campeonatos'
+              :key='`campeonato${indice}`'>
     <div
         class='card'
     >
-      {{ torneio.nome }}
+      {{ campeonato.nome }}
     </div>
   </RouterLink>
 </template>

@@ -1,7 +1,7 @@
 <script setup>
 const menus = [
   {rota: '/', label: 'Início'},
-  {rota: '/torneios', label: 'Torneios'}
+  {rota: '/campeonatos', label: 'Campeonatos'}
 ]
 </script>
 <template>
