@@ -31,6 +31,7 @@ fetch('../src/assets/dados.json')
 
 <template>
   <h5>Jogos</h5>
+  {{mensagem}}
   <div
       class='card'
       v-for='(jogoCampeonato, indice) in jogosCampeonato'>
