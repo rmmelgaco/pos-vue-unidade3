@@ -65,6 +65,35 @@
     },
 
     {
+      "codigoCampeonato": 1,
+      "codigoTimeMandante": 1,
+      "codigoTimeVisitante": 3,
+      "resultado": {
+        "golsMandante": 1,
+        "golsVisitante": 2
+      }
+    },
+    {
+      "codigoCampeonato": 1,
+      "codigoTimeMandante": 2,
+      "codigoTimeVisitante": 5,
+      "resultado": {
+        "golsMandante": 1,
+        "golsVisitante": 1
+      }
+    },
+    {
+      "codigoCampeonato": 1,
+      "codigoTimeMandante": 6,
+      "codigoTimeVisitante": 4,
+      "resultado": {
+        "golsMandante": 5,
+        "golsVisitante": 2
+      }
+    },
+
+
+    {
       "codigoCampeonato": 2,
       "codigoTimeMandante": 2,
       "codigoTimeVisitante": 3,
