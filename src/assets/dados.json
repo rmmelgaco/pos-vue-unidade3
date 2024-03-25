@@ -37,6 +37,7 @@
   ],
   "jogos": [
     {
+      "codigoCampeonato": 1,
       "codigoTimeMandante": 1,
       "codigoTimeVisitante": 2,
       "resultado": {
@@ -45,6 +46,7 @@
       }
     },
     {
+      "codigoCampeonato": 1,
       "codigoTimeMandante": 3,
       "codigoTimeVisitante": 4,
       "resultado": {
@@ -53,10 +55,39 @@
       }
     },
     {
+      "codigoCampeonato": 1,
       "codigoTimeMandante": 5,
       "codigoTimeVisitante": 6,
       "resultado": {
         "golsMandante": 1,
+        "golsVisitante": 2
+      }
+    },
+
+    {
+      "codigoCampeonato": 2,
+      "codigoTimeMandante": 2,
+      "codigoTimeVisitante": 3,
+      "resultado": {
+        "golsMandante": 3,
+        "golsVisitante": 2
+      }
+    },
+    {
+      "codigoCampeonato": 2,
+      "codigoTimeMandante": 4,
+      "codigoTimeVisitante": 5,
+      "resultado": {
+        "golsMandante": 1,
+        "golsVisitante": 1
+      }
+    },
+    {
+      "codigoCampeonato": 2,
+      "codigoTimeMandante": 6,
+      "codigoTimeVisitante": 1,
+      "resultado": {
+        "golsMandante": 2,
         "golsVisitante": 2
       }
     }
